@@ -1,0 +1,125 @@
+// Файл обнуляющих стилей
+// @import "nullstyle.scss";
+/*
+html {
+    font-size: calc(0.6em + 0.6vw)
+}
+*/
+// Переменные для блока
+$fz: 100px;
+$color_1: #eb8a44;
+$color_2: #f9dc24;
+$color_3: #4b7447;
+$color_cer: #7a7a7a; // #7A7A7A   / b4b4b4
+$color_red: #ff0000;
+
+body {
+   font-family: "Trebuchet MS", Helvetica, Tahoma, Arial, Verdana, sans-serif;
+   //font-weight: bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900
+   font-weight: 600;
+}
+/*
+font-family: 'Mrs Sheppards',handwriting;
+font-weight: 400;
+font-size: 16px;
+font-size: 1rem;
+*/
+.container {
+   max-width: 1200px;
+   margin: 0px auto;
+   padding: 0px 10px;
+}
+
+/*2 цвета */
+
+.bel2 {
+   position: relative;
+   color: black;
+   -webkit-text-stroke: 0.03em #fffffd;
+}
+
+.bel2::before {
+   /* второй слой */
+   /*  content: attr(data-text);
+    position: absolute;
+    /* в том же месте той же ширины */
+   /*   left: 0;
+    right: 0;
+    -webkit-text-stroke: .02em gold;
+    */
+}
+
+a.no-after:after {
+   content: none;
+}
+
+.d-none {
+   display: none !important;
+}
+
+.clearfix {
+   padding: 100px 10px;
+}
+
+.t-c {
+   text-align: center !important;
+}
+.a_wap_cl {
+   // color: $color_1;
+   &:hover {
+      color: white !important;
+   }
+}
+
+// header astra
+.ast-mobile-header-wrap .ast-primary-header-bar .ast-builder-grid-row-container-inner,
+.ast-primary-header-bar .site-primary-header-wrap {
+   min-height: 90px;
+}
+
+/*** a стили с плавным подчеркиванием ссылки***/
+/*
+a {
+   display: inline-block;
+   color: #ffeb3b;
+   line-height: 1;
+   text-decoration: none;
+   cursor: pointer;
+   position: relative;
+   border: none;
+
+   &:after {
+      background-color: #ffeb3b;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      left: 50%;
+      position: absolute;
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      transform: translateX(-50%);
+   }
+
+   &:hover:after,
+   :focus:after {
+      width: 100%;
+   }
+}
+*/
+@mixin fontz($f, $c) {
+   font-size: $f;
+   color: $c;
+}
+@import "header.scss";
+@import "glav.scss";
+@import "slider.scss";
+/*
+@import "woocomcss.scss";
+@import "modal.scss";
+@import "header.scss";
+@import "widget.scss";
+*/

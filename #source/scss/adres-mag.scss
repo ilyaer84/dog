@@ -1,0 +1,52 @@
+.adr_mag {
+   width: 100%;
+   background-color: #fff;
+   border-bottom: 1px solid #eee;
+   margin: 10px 0px;
+   display: table;
+   //empty-cells: show;
+}
+
+.name_block {
+   display: table-cell;
+}
+
+.l_krai {
+   border-left: 1px solid #0274be;
+}
+
+.p_krai {
+}
+
+.name_col {
+   color: rgb(122, 122, 122);
+   border-right: 1px solid #0274be;
+   border-top: 1px solid #0274be;
+   border-bottom: 1px solid #0274be;
+   text-align: center;
+   height: 45px;
+   white-space: nowrap;
+   //display: ruby; имеет ограниченную совместимость. Вы можете использовать white-space: nowrap; insted.
+}
+
+.d_mag {
+   text-align: center;
+   border-right: 1px solid #0274be;
+   border-bottom: 1px solid #0274be;
+   height: 100px;
+}
+
+.graf_block {
+}
+
+.tel_block {
+}
+
+.type_block {
+}
+
+@media (max-width: 767px) {
+   .adr_mag {
+      //    font-size: 0.8em;
+   }
+}

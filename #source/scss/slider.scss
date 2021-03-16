@@ -1,0 +1,175 @@
+/******slider sect**/
+
+.zag-rev {
+	text-align: center;
+	font-size: large;
+	line-height: 1.15;
+	position: relative;
+	padding: 15px 0;
+	font-weight: bold;
+	& mark {
+		background: none;
+		padding: 0.2em;
+		color: #10b6fe;
+	}
+	& span {
+		border-left: 3px solid #10b6fe !important;
+		padding-left: 25px;
+		display: inline-block;
+	}
+}
+
+.border-left {
+	border-left: 3px solid #10b6fe !important;
+	padding-left: 25px;
+	display: inline-block;
+}
+
+.user-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+	cursor: w-resize;
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		padding-top: 3px;
+		position: absolute;
+		border-top: 2px solid #d9d9d9;
+		border-bottom: 2px solid #d9d9d9;
+	}
+}
+
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	&:focus {
+		outline: none;
+	}
+	& .dragging {
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	& img {
+		display: block;
+	}
+	& .slick-loading img {
+		display: none;
+	}
+	&.dragging img {
+		pointer-events: none;
+	}
+}
+
+[dir="rtl"] .slick-slide {
+	float: right;
+}
+
+.slick-initialized .slick-slide {
+	display: block;
+}
+
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.user__img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: #bcbdbd;
+	overflow: hidden;
+	margin: 0 auto;
+	border: solid 3px #bcbdbd;
+}
+
+.user__name {
+	font-weight: 600;
+	color: #10b6fe;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.user__job {
+	color: #99a9b5;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.user__post {
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #3c3950;
+	/*  line-height: 1.5;*/
+	text-align: center;
+	margin: 0 auto;
+}
+
+.user__quotes {
+	font-family: "Montserrat", sans-serif;
+	font-size: 160px;
+	color: #a3e7f0;
+	font-weight: 600;
+	padding: 96px 0 13px 0;
+	line-height: 0;
+}
+
+/******ens slider**/
